@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Info From</title>
+    </head>
+    <body align="center">
+        <h2>Application form</h2>
+        <form id="student-info-form">
+            <label for="first_name">First name:</label>
+            <input
+                required
+                placeholder="First name"
+                name="first_name"
+                id="first_name"
+                type="text"
+                pattern="[A-Za-z]{2,20}"
+                maxlength="20"
+            />
+            <br />
+            <br />
+            <label for="last_name">Last name:</label>
+            <input
+                required
+                placeholder="Last name"
+                name="last_name"
+                id="last_name"
+                type="text"
+                pattern="[A-Za-z]{2,20}"
+                maxlength="20"
+            />
+            <br /><br />
+            <label for="email">Email address:</label>
+            <input required placeholder="yourEmail@gmail.com" type="email" name="email" id="email" />
+            <br /><br />
+            <label for="phone">Phone number:</label>
+            <input
+                required
+                placeholder="097-314-1234"
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+            <br />
+            <br />
+            <button type="submit">Submit</button>&nbsp;&nbsp;
+            <button type="reset">Clear form</button>
+        </form>
+        <hr />
+        <button><a href="./index.html">Back</a></button>
+    </body>
+</html>
